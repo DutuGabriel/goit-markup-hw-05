@@ -490,7 +490,7 @@ img {
   margin-left: 16px;
 }
 
-.modal-window-container {
+.modal-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -501,7 +501,7 @@ img {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-container {
+.modal-window {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -516,7 +516,7 @@ img {
   padding: 72px 24px 24px 24px;
 }
 
-.modal-form-button {
+.modal-close-button {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -534,8 +534,8 @@ img {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-button:hover,
-.modal-form-button:focus {
+.modal-close-button:hover,
+.modal-close-button:focus {
   background-color: #404bbf;
   border: none;
 }
@@ -550,7 +550,7 @@ img {
   margin-bottom: 16px;
 }
 
-.modal-form-form {
+.modal-form {
   margin-bottom: 8px;
 }
 
@@ -563,11 +563,11 @@ img {
   margin-bottom: 4px;
 }
 
-.input-and-icon {
+.input-container {
   position: relative;
 }
 
-.input {
+.modal-input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -577,7 +577,7 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input:focus {
+.modal-input:focus {
   border-color: #4d5ae5;
 }
 
@@ -587,4 +587,68 @@ img {
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus + .input-icon {
+  fill: #4d5ae5;
+}
+
+.modal-textarea {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-textarea:focus {
+  border-color: #4d5ae5;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.checkbox-span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  margin-left: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-checkbox-label input:checked + .checkbox-span {
+  background-color: #4d5ae5;
+}
+
+.modal-submit-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
