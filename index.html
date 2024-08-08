@@ -513,7 +513,7 @@
         <form>
           <div class="modal-form">
             <label class="modal-form-label" for="user-name">Name</label>
-            <div class="input-and-icon">
+            <div class="input-container">
               <input
                 class="modal-input"
                 type="text"
@@ -521,40 +521,40 @@
                 name="user-name"
                 class="modal-input"
               />
-              <svg class="input-icon-svg">
+              <svg class="input-icon-svg" width="18" height="24">
                 <use href="" />
               </svg>
             </div>
           </div>
           <div class="modal-form">
             <label class="modal-form-label" for="user-name">Phone</label>
-            <div class="input-and-icon">
+            <div class="input-container">
               <input
                 class="modal-input"
                 type="text"
                 id="user-name"
                 name="user-name"
               />
-              <svg class="input-icon-svg">
+              <svg class="input-icon-svg" width="18" height="24">
                 <use href="" />
               </svg>
             </div>
           </div>
           <div class="modal-form">
             <label class="modal-form-label" for="user-name">Email</label>
-            <div class="input-and-icon">
+            <div class="input-container">
               <input
                 class="modal-input"
                 type="text"
                 id="user-name"
                 name="user-name"
               />
-              <svg class="input-icon-svg">
+              <svg class="input-icon-svg" width="18" height="24">
                 <use href="" />
               </svg>
             </div>
           </div>
-          <div class="modal-form-group">
+          <div class="modal-form">
             <label class="modal-form-label" for="user-comment">Comment</label>
             <textarea
               id="user-comment"
@@ -563,16 +563,18 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <div class="modal-form-group">
+          <div class="modal-form">
             <input
               type="checkbox"
               id="user-privacy"
               name="user-privacy"
               class="visually-hidden"
+              value="true"
             />
             <label for="user-privacy" class="modal-checkbox-label">
-              I accept the terms and conditions of the Privacy Policy
               <span class="checkbox-span"></span>
+              I accept the terms and conditions of the
+              <a class="privacy-policy" href="index.html">Privacy Policy</a>
             </label>
           </div>
           <button type="submit" class="modal-submit-button">Send</button>
