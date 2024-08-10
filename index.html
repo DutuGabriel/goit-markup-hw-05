@@ -491,7 +491,7 @@
                 type="email"
                 name="email-adress"
                 placeholder="E-mail" /></label
-            ><button class="form-button" type="submit">
+            ><button class="open-button" type="submit">
               Subscribe
               <svg class="form-button-svg" width="24" height="24">
                 <use href="./images/icons.svg#icon-frame4" />
@@ -504,9 +504,9 @@
 
     <!--Modal Window Section-->
 
-    <div class="modal-container">
+    <div class="modal-container is-open">
       <div class="modal-window">
-        <button type="button" class="modal-close-button">
+        <button type="button" class="close-button">
           <svg class="modal-icon-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-close" />
           </svg>
@@ -567,21 +567,23 @@
               type="checkbox"
               id="user-privacy"
               name="user-privacy"
-              class="visually-hidden"
+              class="modal-checkbox-input visually-hidden"
               value="true"
             />
-            <label for="user-privacy" class="modal-checkbox-label">
+            <label for="user-privacy" class="modal-checkbox-label"
+              >I accept the terms and conditions of the
               <span class="checkbox-span">
                 <svg width="10" height="8">
-                  <use href="./images/icons.svg#icon-checkbox" />
-                </svg> </span
-              >I accept the terms and conditions of the
-              <a class="privacy-policy" href="index.html">Privacy Policy</a>
+                  <use href="./images/icons.svg#icon-check" />
+                </svg>
+              </span>
+              <a class="privacy-policy" href="#">Privacy Policy</a>
             </label>
           </div>
           <button type="submit" class="modal-submit-button">Send</button>
         </form>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
